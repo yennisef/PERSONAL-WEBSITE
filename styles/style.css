@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+
+:root{
+    --primaryTextColor: #232e35;/*title atau judu*/
+    --secondaryTextColor: #656d72; /*untuk teks biasa*/
+
+    --borderColor: #f1f1f1;
+    --lineColor: #d9d9d9; /*untuk line di pre title*/
+
+    --primaryBackgroundColor: #fff;
+    --secondaryBackgroundColor:#fbfbfb;
+    --thirdBackgroundColor: #f5f3fe;
+
+    --primaryIconColor: #7e74f1;
+    --primaryIconColorHover: #5d51e8;
+
+    --sectionPadding: 6rem 0;
+
+    --itemBorderRadius:0.7rem;
+}
+
+* {
+    margin: 0;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Times New Roman", sans-serif;
+}
+h1,h2,h3,h4,h5,h6, strong {
+    color: var(--primaryTextColor);
+    padding: 30px;
+}
+
+p{
+    font-size: 1rem; /*16px*/
+    line-height: 1.9rem;
+    margin: 20px;
+    padding: 15px;
+}
+
+p,span,label, input, textarea, li {
+    color: var(--secondaryTextColor);
+}
+
+a{
+    text-decoration: none; /*menghilangkan garis dibawah huruf*/
+}
+.main-container{
+    width: 1200px;
+    margin: 0 auto ;
+}
+
+@media screen and (max-width: 1200px){
+    .main-container{
+      width: 90%;  
+    }
+}
+/*Buttons*/
+.btn{
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1.5px solid var(--borderColor);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.04)0px 3px 5px;
+    color: #5d51e8;
+}
+/*titles*/
+.pre-title{
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: var(--secondaryTextColor);
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.pre-title::before{
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: var(--lineColor);
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+
+}
+
+/*logo dan navigasi menu*/
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo a{
+    color: var(--primaryTextColor);
+}
+
+.nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li a{
+    color: var(--primaryTextColor);
+}
+
+/*Burger*/
+/*.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+}*/
+
+/*.burger {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}*/
+
+/*hero section*/
+#hero{
+    height: 70px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.hero-name{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: .5rem 0 1rem;
+}
+
+.hero-name span{
+    color: var(--primaryIconColor);
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
+
+.skills .education{
+    line-height: 1.5px;
+}
+a:hover{
+    color: #5d51e8;
+    margin: 2px;
+    transition: margin 0.2s ease-in-out;
+}
+.nav ul li a:hover{
+    color: #5d51e8;
+    margin: 2px;
+    transition: margin 0.2s ease-in-out;
+}

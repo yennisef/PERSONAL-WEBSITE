@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+body{
+    height: 100vh;
+    display: flex;
+    background: #ffff;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 60px auto;
+    text-align: center;
+}
+  
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+.fcc-btn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px 0;
+    color: white;
+    background-color: #5d51e8;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin: 60px auto;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    margin: 60px auto;
+}
+
+.fcc-btn:hover, a:hover {
+    opacity: 0.7;
+}
+
